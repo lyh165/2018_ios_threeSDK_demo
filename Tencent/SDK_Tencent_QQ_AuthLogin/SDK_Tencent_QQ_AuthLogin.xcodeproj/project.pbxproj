@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B6DD6A7213D4301003DED65 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6A6213D4301003DED65 /* AppDelegate.m */; };
+		9B6DD6AA213D4301003DED65 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6A9213D4301003DED65 /* ViewController.m */; };
+		9B6DD6AD213D4301003DED65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD6AB213D4301003DED65 /* Main.storyboard */; };
+		9B6DD6AF213D4301003DED65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD6AE213D4301003DED65 /* Assets.xcassets */; };
+		9B6DD6B2213D4301003DED65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD6B0213D4301003DED65 /* LaunchScreen.storyboard */; };
+		9B6DD6B5213D4301003DED65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DD6B4213D4301003DED65 /* main.m */; };
+		9B6DD6BD213D45ED003DED65 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6BC213D45ED003DED65 /* TencentOpenAPI.framework */; };
+		9B6DD6C0213D4639003DED65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6BF213D4639003DED65 /* SystemConfiguration.framework */; };
+		9B6DD6C6213D48C2003DED65 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9B6DD6C5213D48C2003DED65 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		9B6DD6CA213D4AA9003DED65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6C9213D4AA9003DED65 /* CoreGraphics.framework */; };
+		9B6DD6CC213D4AB0003DED65 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6CB213D4AB0003DED65 /* libsqlite3.tbd */; };
+		9B6DD6CE213D4AB8003DED65 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6CD213D4AB8003DED65 /* CoreTelephony.framework */; };
+		9B6DD6D0213D4ABF003DED65 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6CF213D4ABF003DED65 /* libstdc++.tbd */; };
+		9B6DD6D2213D4AC4003DED65 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6DD6D1213D4AC4003DED65 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B6DD6A2213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_Tencent_QQ_AuthLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6DD6A5213D4301003DED65 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B6DD6A6213D4301003DED65 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B6DD6A8213D4301003DED65 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B6DD6A9213D4301003DED65 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B6DD6AC213D4301003DED65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B6DD6AE213D4301003DED65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B6DD6B1213D4301003DED65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B6DD6B3213D4301003DED65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6DD6B4213D4301003DED65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B6DD6BC213D45ED003DED65 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		9B6DD6BF213D4639003DED65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9B6DD6C5213D48C2003DED65 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		9B6DD6C9213D4AA9003DED65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9B6DD6CB213D4AB0003DED65 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9B6DD6CD213D4AB8003DED65 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		9B6DD6CF213D4ABF003DED65 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		9B6DD6D1213D4AC4003DED65 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B6DD69F213D4301003DED65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6DD6D2213D4AC4003DED65 /* libz.tbd in Frameworks */,
+				9B6DD6D0213D4ABF003DED65 /* libstdc++.tbd in Frameworks */,
+				9B6DD6CE213D4AB8003DED65 /* CoreTelephony.framework in Frameworks */,
+				9B6DD6CC213D4AB0003DED65 /* libsqlite3.tbd in Frameworks */,
+				9B6DD6CA213D4AA9003DED65 /* CoreGraphics.framework in Frameworks */,
+				9B6DD6C0213D4639003DED65 /* SystemConfiguration.framework in Frameworks */,
+				9B6DD6BD213D45ED003DED65 /* TencentOpenAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B6DD699213D4300003DED65 = {
+			isa = PBXGroup;
+			children = (
+				9B6DD6A4213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin */,
+				9B6DD6A3213D4301003DED65 /* Products */,
+				9B6DD6BE213D4639003DED65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B6DD6A3213D4301003DED65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6DD6A2213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B6DD6A4213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin */ = {
+			isa = PBXGroup;
+			children = (
+				9B6DD6BB213D45ED003DED65 /* SDK_Tencent */,
+				9B6DD6A5213D4301003DED65 /* AppDelegate.h */,
+				9B6DD6A6213D4301003DED65 /* AppDelegate.m */,
+				9B6DD6A8213D4301003DED65 /* ViewController.h */,
+				9B6DD6A9213D4301003DED65 /* ViewController.m */,
+				9B6DD6AB213D4301003DED65 /* Main.storyboard */,
+				9B6DD6AE213D4301003DED65 /* Assets.xcassets */,
+				9B6DD6B0213D4301003DED65 /* LaunchScreen.storyboard */,
+				9B6DD6B3213D4301003DED65 /* Info.plist */,
+				9B6DD6B4213D4301003DED65 /* main.m */,
+			);
+			path = SDK_Tencent_QQ_AuthLogin;
+			sourceTree = "<group>";
+		};
+		9B6DD6BB213D45ED003DED65 /* SDK_Tencent */ = {
+			isa = PBXGroup;
+			children = (
+				9B6DD6C5213D48C2003DED65 /* TencentOpenApi_IOS_Bundle.bundle */,
+				9B6DD6BC213D45ED003DED65 /* TencentOpenAPI.framework */,
+			);
+			path = SDK_Tencent;
+			sourceTree = "<group>";
+		};
+		9B6DD6BE213D4639003DED65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B6DD6D1213D4AC4003DED65 /* libz.tbd */,
+				9B6DD6CF213D4ABF003DED65 /* libstdc++.tbd */,
+				9B6DD6CD213D4AB8003DED65 /* CoreTelephony.framework */,
+				9B6DD6CB213D4AB0003DED65 /* libsqlite3.tbd */,
+				9B6DD6C9213D4AA9003DED65 /* CoreGraphics.framework */,
+				9B6DD6BF213D4639003DED65 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B6DD6A1213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6DD6B8213D4301003DED65 /* Build configuration list for PBXNativeTarget "SDK_Tencent_QQ_AuthLogin" */;
+			buildPhases = (
+				9B6DD69E213D4301003DED65 /* Sources */,
+				9B6DD69F213D4301003DED65 /* Frameworks */,
+				9B6DD6A0213D4301003DED65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDK_Tencent_QQ_AuthLogin;
+			productName = SDK_Tencent_QQ_AuthLogin;
+			productReference = 9B6DD6A2213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B6DD69A213D4300003DED65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = lee;
+				TargetAttributes = {
+					9B6DD6A1213D4301003DED65 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B6DD69D213D4300003DED65 /* Build configuration list for PBXProject "SDK_Tencent_QQ_AuthLogin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B6DD699213D4300003DED65;
+			productRefGroup = 9B6DD6A3213D4301003DED65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B6DD6A1213D4301003DED65 /* SDK_Tencent_QQ_AuthLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B6DD6A0213D4301003DED65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6DD6C6213D48C2003DED65 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				9B6DD6B2213D4301003DED65 /* LaunchScreen.storyboard in Resources */,
+				9B6DD6AF213D4301003DED65 /* Assets.xcassets in Resources */,
+				9B6DD6AD213D4301003DED65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B6DD69E213D4301003DED65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6DD6AA213D4301003DED65 /* ViewController.m in Sources */,
+				9B6DD6B5213D4301003DED65 /* main.m in Sources */,
+				9B6DD6A7213D4301003DED65 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B6DD6AB213D4301003DED65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6DD6AC213D4301003DED65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B6DD6B0213D4301003DED65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6DD6B1213D4301003DED65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B6DD6B6213D4301003DED65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9B6DD6B7213D4301003DED65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B6DD6B9213D4301003DED65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FR6C5N825;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK_Tencent_QQ_AuthLogin/SDK_Tencent",
+				);
+				INFOPLIST_FILE = SDK_Tencent_QQ_AuthLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lyh.SDK-Tencent-QQ-AuthLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B6DD6BA213D4301003DED65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FR6C5N825;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK_Tencent_QQ_AuthLogin/SDK_Tencent",
+				);
+				INFOPLIST_FILE = SDK_Tencent_QQ_AuthLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-fobjc-arc";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lyh.SDK-Tencent-QQ-AuthLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B6DD69D213D4300003DED65 /* Build configuration list for PBXProject "SDK_Tencent_QQ_AuthLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6DD6B6213D4301003DED65 /* Debug */,
+				9B6DD6B7213D4301003DED65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6DD6B8213D4301003DED65 /* Build configuration list for PBXNativeTarget "SDK_Tencent_QQ_AuthLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6DD6B9213D4301003DED65 /* Debug */,
+				9B6DD6BA213D4301003DED65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B6DD69A213D4300003DED65 /* Project object */;
+}
