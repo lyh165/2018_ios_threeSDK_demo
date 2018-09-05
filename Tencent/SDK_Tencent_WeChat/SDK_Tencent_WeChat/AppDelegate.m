@@ -17,30 +17,66 @@
     return [WXApi handleOpenURL:url delegate:self];
 }
 
-#pragma mark 1、微信授权第一步：获取code
 - (void)onResp:(BaseResp *)resp
 {
-    switch (resp.errCode)
-    {
-        case 0:
-        {
-            // 用户同意 获取code
-            SendAuthResp *yuResp = (SendAuthResp *)resp;
-            NSLog(@"code == %@",yuResp.code);
-            [self getWeiXinOpenId:yuResp.code];
+    
+    NSLog(@"回调处理");
+    // 处理 分享请求 回调
+    if ([resp isKindOfClass:[SendMessageToWXResp class]]) {
+        switch (resp.errCode) {
+            case WXSuccess:
+            {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                                message:@"分享成功!"
+                                                               delegate:self
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil, nil];
+                [alert show];
+            }
+                break;
+                
+            default:
+            {
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                                message:@"分享失败!"
+                                                               delegate:self
+                                                      cancelButtonTitle:@"OK"
+                                                      otherButtonTitles:nil, nil];
+                [alert show];
+            }
+                break;
         }
-            break;
-        case -4://用户拒绝授权
-        {
-            NSLog(@"您拒绝授权微信登录");
-        }
-            break;
-        case -2://用户取消
-        {
-            NSLog(@"您取消了授权微信登录");
-        }
-            break;
+        
     }
+    else if ([resp isKindOfClass:[SendAuthResp class]])
+    {
+#pragma mark 1、微信授权第一步：获取code
+
+        switch (resp.errCode)
+        {
+            case 0:
+            {
+                // 用户同意 获取code
+                SendAuthResp *yuResp = (SendAuthResp *)resp;
+                NSLog(@"code == %@",yuResp.code);
+                [self getWeiXinOpenId:yuResp.code];
+            }
+                break;
+            case -4://用户拒绝授权
+            {
+                NSLog(@"您拒绝授权微信登录");
+            }
+                break;
+            case -2://用户取消
+            {
+                NSLog(@"您取消了授权微信登录");
+            }
+                break;
+        }
+    }
+    
+    
+    
     
 }
 #pragma mark 3、微信授权第三步：通过access_token获取个人信息

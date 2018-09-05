@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,17 +24,36 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5A-Wx-b7k"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1F-C9-MJO">
+                                <rect key="frame" x="138" y="391" width="99" height="30"/>
+                                <state key="normal" title="分享_微信好友"/>
+                                <connections>
+                                    <action selector="share_friends:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZf-oC-Pn8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6B-Vn-evW">
+                                <rect key="frame" x="131" y="472" width="114" height="30"/>
+                                <state key="normal" title="分享_微信朋友圈"/>
+                                <connections>
+                                    <action selector="share_CircleOfFriends:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhQ-LS-AOv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="P1F-C9-MJO" firstAttribute="centerX" secondItem="rT5-h9-2fP" secondAttribute="centerX" id="3Ja-bt-s7l"/>
+                            <constraint firstItem="P1F-C9-MJO" firstAttribute="top" secondItem="rT5-h9-2fP" secondAttribute="bottom" constant="43" id="LzQ-kk-EJ7"/>
                             <constraint firstItem="rT5-h9-2fP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QMz-T3-0C9"/>
+                            <constraint firstItem="P1F-C9-MJO" firstAttribute="centerX" secondItem="C6B-Vn-evW" secondAttribute="centerX" id="ath-QP-AlC"/>
                             <constraint firstItem="rT5-h9-2fP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gk8-hh-Aaw"/>
+                            <constraint firstItem="C6B-Vn-evW" firstAttribute="top" secondItem="P1F-C9-MJO" secondAttribute="bottom" constant="51" id="jLp-jM-aoV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="102.99850074962519"/>
         </scene>
     </scenes>
 </document>
