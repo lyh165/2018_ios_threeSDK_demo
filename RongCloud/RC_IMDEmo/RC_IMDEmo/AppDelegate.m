@@ -21,6 +21,18 @@
             NSLog(@"userid %@",userId);
             [[RCIM sharedRCIM]setUserInfoDataSource:self]; // 登录的时候 设置用户信息提供者的代理
             
+            RCUserInfo *userinfo = [[RCUserInfo alloc]init];
+            userinfo.userId = userId;
+            userinfo.name = @"lyh165";
+            //            userinfo.portraitUri = @"https://imgsa.baidu.com/forum/pic/item/d11373f082025aaf7a7c4de5f6edab64034f1a55.jpg";
+            userinfo.portraitUri = @"https://imgsa.baidu.com/forum/pic/item/c9177f3e6709c93dbe94dfd9923df8dcd10054be.jpg";
+            
+            NSLog(@"用户名称 %@",[RCIM sharedRCIM].currentUserInfo.name);
+            NSLog(@"用户userId %@",[RCIM sharedRCIM].currentUserInfo.userId);
+            NSLog(@"用户portraitUri %@",[RCIM sharedRCIM].currentUserInfo.portraitUri);
+            [RCIM sharedRCIM].currentUserInfo = userinfo;
+            
+            
             ChatlistViewController *chatListVC = [[ChatlistViewController alloc]init];
             self.nav = [[UINavigationController alloc]initWithRootViewController:chatListVC];
             self.window.rootViewController = self.nav;
@@ -43,18 +55,18 @@
     {
         RCUserInfo *userinfo = [[RCUserInfo alloc]init];
         userinfo.userId = userId;
-        userinfo.name = @"lyh1682222";
+        userinfo.name = @"lyh168";
         userinfo.portraitUri = @"http://f2.topitme.com/2/58/7f/11231445813f57f582o.jpg";
         completion(userinfo);
     }
     else
-        {
-            RCUserInfo *userinfo = [[RCUserInfo alloc]init];
-            userinfo.userId = userId;
-            userinfo.name = @"lyh165";
-            userinfo.portraitUri = @"http://imgtu.5011.net/uploads/content/20170209/4934501486627131.jpg";
-            completion(userinfo);
-        }
+    {
+        RCUserInfo *userinfo = [[RCUserInfo alloc]init];
+        userinfo.userId = userId;
+        userinfo.name = @"lyh165";
+        userinfo.portraitUri = @"http://imgtu.5011.net/uploads/content/20170209/4934501486627131.jpg";
+        completion(userinfo);
+    }
 }
 
 
@@ -63,7 +75,7 @@
 
 /**
  用户1
-{"code":200,"userId":"lyh165","token":"XZ5GUw6t+mwlmwyRZr+R8eP/bLeTsVctwZjwZwcK2mzpuJisKcAeDvl2U9n/Sec0Ag5wAah95goXBOwGPPOCGw=="}
+ {"code":200,"userId":"lyh165","token":"XZ5GUw6t+mwlmwyRZr+R8eP/bLeTsVctwZjwZwcK2mzpuJisKcAeDvl2U9n/Sec0Ag5wAah95goXBOwGPPOCGw=="}
  
  信息1
  {"code":200,"userName":"lyh165","userPortrait":"http://img5.imgtn.bdimg.com/it/u=1934952861,3453579486&fm=27&gp=0.jpg","createTime":"2018-09-07 15:35:30"}
