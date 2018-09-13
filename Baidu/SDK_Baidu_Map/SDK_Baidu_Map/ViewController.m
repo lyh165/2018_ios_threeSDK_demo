@@ -56,7 +56,7 @@
     self.appName = @"demoURI";
     //目标的经纬度(由后台返给我们)
     self.coordinate = CLLocationCoordinate2DMake(0,0);
-
+    
 }
 
 #define BaiDuNavUrl @"baidumap://map/direction?origin=latlng:0,0|name:我的位置&destination=latlng:%@,%@|name:%@&mode=walking"
@@ -101,8 +101,22 @@
          coord_type    坐标类型，可选参数，默认为bd09ll。    可选    允许的值为bd09ll、gcj02、wgs84。bd09ll表示百度经纬度坐标， gcj02表示经过国测局坐标，wgs84表示gps获取的坐标。
          src    表示来源，用于统计    必选    必选参数，格式为：ios.companyName.appName 不传此参数，不保证服务
          */
+        
+        
+        /**
+         经纬度 (缺点 在百度地图显示起始点和目的地不是我们想要的。上面都是显示 地图上的点)
+         baidumap://map/direction?origin=34.264642646862,108.95108518068&destination=40.007623,116.360582&mode=driving&src=ios.baidu.openAPIdemo
+         中文
+         baidumap://map/direction?origin=中关村&destination=五道口&mode=driving&region=北京&src=ios.lyh.demo
+         
+         起始地设置默认我的位置
+         baidumap://map/direction?origin={{我的位置}}&destination=五道口&mode=driving&region=北京&src=ios.lyh.demo
+         
+         */
         UIAlertAction *action = [UIAlertAction actionWithTitle:@"百度地图" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?origin=中关村&destination=五道口&mode=driving&region=北京&src=ios.lyh.demo"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            //            NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?origin=中关村&destination=五道口&mode=driving&region=北京&src=ios.lyh.demo"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?origin={{我的位置}}&destination=40.007623,116.360582&mode=driving&src=ios.baidu.openAPIdemo"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            
             NSLog(@"%@",urlString);
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
         }];
