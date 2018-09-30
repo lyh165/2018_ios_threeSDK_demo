@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B442A8C2160785A00D5DA33 /* demoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B442A8B2160785A00D5DA33 /* demoViewController.m */; };
+		9B442A9521607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B442A9421607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.m */; };
 		9B5856EA213D2AD6004E779C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5856E9213D2AD6004E779C /* AppDelegate.m */; };
 		9B5856ED213D2AD6004E779C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5856EC213D2AD6004E779C /* ViewController.m */; };
 		9B5856F0213D2AD6004E779C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5856EE213D2AD6004E779C /* Main.storyboard */; };
@@ -23,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B442A8A2160785A00D5DA33 /* demoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demoViewController.h; sourceTree = "<group>"; };
+		9B442A8B2160785A00D5DA33 /* demoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoViewController.m; sourceTree = "<group>"; };
+		9B442A9321607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+LYH_JSONLog.h"; sourceTree = "<group>"; };
+		9B442A9421607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+LYH_JSONLog.m"; sourceTree = "<group>"; };
 		9B5856E5213D2AD6004E779C /* SDK_Tencent_WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDK_Tencent_WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5856E8213D2AD6004E779C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B5856E9213D2AD6004E779C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +68,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B442A8D21607FCE00D5DA33 /* LYH_Tool */ = {
+			isa = PBXGroup;
+			children = (
+				9B442A8E21607FCE00D5DA33 /* Category */,
+			);
+			path = LYH_Tool;
+			sourceTree = "<group>";
+		};
+		9B442A8E21607FCE00D5DA33 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9B442A8F21607FCE00D5DA33 /* My_Custom */,
+				9B442A9021607FCE00D5DA33 /* AppleFramework */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9B442A8F21607FCE00D5DA33 /* My_Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = My_Custom;
+			sourceTree = "<group>";
+		};
+		9B442A9021607FCE00D5DA33 /* AppleFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9B442A9121607FCE00D5DA33 /* UIKit */,
+				9B442A9221607FCE00D5DA33 /* Foundation */,
+			);
+			path = AppleFramework;
+			sourceTree = "<group>";
+		};
+		9B442A9121607FCE00D5DA33 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		9B442A9221607FCE00D5DA33 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				9B442A9321607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.h */,
+				9B442A9421607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		9B5856DC213D2AD6004E779C = {
 			isa = PBXGroup;
 			children = (
@@ -82,11 +137,14 @@
 		9B5856E7213D2AD6004E779C /* SDK_Tencent_WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				9B442A8D21607FCE00D5DA33 /* LYH_Tool */,
 				9B5856FE213D2B24004E779C /* SDK_WeChat_Auth */,
 				9B5856E8213D2AD6004E779C /* AppDelegate.h */,
 				9B5856E9213D2AD6004E779C /* AppDelegate.m */,
 				9B5856EB213D2AD6004E779C /* ViewController.h */,
 				9B5856EC213D2AD6004E779C /* ViewController.m */,
+				9B442A8A2160785A00D5DA33 /* demoViewController.h */,
+				9B442A8B2160785A00D5DA33 /* demoViewController.m */,
 				9B5856EE213D2AD6004E779C /* Main.storyboard */,
 				9B5856F1213D2AD7004E779C /* Assets.xcassets */,
 				9B5856F3213D2AD7004E779C /* LaunchScreen.storyboard */,
@@ -194,6 +252,8 @@
 				9B5856ED213D2AD6004E779C /* ViewController.m in Sources */,
 				9B5856F8213D2AD7004E779C /* main.m in Sources */,
 				9B5856EA213D2AD6004E779C /* AppDelegate.m in Sources */,
+				9B442A8C2160785A00D5DA33 /* demoViewController.m in Sources */,
+				9B442A9521607FCE00D5DA33 /* NSDictionary+LYH_JSONLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

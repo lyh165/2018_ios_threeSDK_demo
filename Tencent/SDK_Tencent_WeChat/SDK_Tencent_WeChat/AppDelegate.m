@@ -91,7 +91,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if (data){
                 NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                NSLog(@"dic %@",dic);
+                NSLog(@"dic %@",[dic lyh_jsonLog_descriptionWithLocale:nil]);
                 NSString *openID = dic[@"openid"];
                 NSString *unionid = dic[@"unionid"];
                 NSString *access_token = dic[@"access_token"];
@@ -115,7 +115,7 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             if (data){
                 NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                NSLog(@"dic %@",dic);
+                NSLog(@"dic %@",[dic lyh_jsonLog_descriptionWithLocale:nil]);
 
             }
         });

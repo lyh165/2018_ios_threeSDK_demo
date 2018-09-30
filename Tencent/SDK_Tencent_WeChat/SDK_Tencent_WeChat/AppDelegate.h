@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WXApi.h"
+#import "NSDictionary+LYH_JSONLog.h"
 
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate>  
