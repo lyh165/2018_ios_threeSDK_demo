@@ -169,6 +169,7 @@
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         //                    [[NSNotificationCenter defaultCenter] postNotificationName:@"WeChat_log_seuuess" object:nil userInfo:@{@"code":res.code}];
                         NSLog(@"返回结果 %@",res.code);
+#warning 没有安装微信的时候 需要通过code获取微信用户信息
                         [self getWeiXinOpenId:res.code];
                         
                     });
